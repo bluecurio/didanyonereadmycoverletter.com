@@ -36,7 +36,6 @@ h1 {
 h2 {
   text-align: center;
   color: #c9d1d9;
-  font-variant: small-caps;
   margin-bottom: 15px;
   font-size: 2rem;
   font-weight: 600;
@@ -66,16 +65,23 @@ h2 {
   font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 8px;
+  text-align: left;
 }
 
-.linkedin-link {
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.social-links a {
   color: #58a6ff;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   transition: color 0.2s;
 }
 
-.linkedin-link:hover {
+.social-links a:hover {
   color: #79c0ff;
   text-decoration: underline;
 }
