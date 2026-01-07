@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Setup script for creating DynamoDB table for visitor-tracker
+# Setup script for creating DynamoDB table for didanyonereadmycoverletter.com
 
-echo "Creating DynamoDB table for visitor-tracker..."
+echo "Creating DynamoDB table for didanyonereadmycoverletter.com..."
 
-TABLE_NAME="visitor-tracker"
+TABLE_NAME="didanyonereadmycoverletter.com"
 REGION="${AWS_REGION:-us-east-1}"
 
 # Check if AWS CLI is installed
@@ -37,7 +37,7 @@ aws dynamodb create-table \
   --key-schema AttributeName=id,KeyType=HASH \
   --billing-mode PAY_PER_REQUEST \
   --region "$REGION" \
-  --tags Key=Project,Value=visitor-tracker
+  --tags Key=Project,Value=didanyonereadmycoverletter.com
 
 if [ $? -eq 0 ]; then
     echo "✓ Table created successfully!"

@@ -12,7 +12,7 @@ Get your visitor tracker running on AWS in minutes!
 
 1. **Install dependencies**:
    ```bash
-   cd visitor-tracker
+   cd didanyonereadmycoverletter.com
    npm install
    ```
 
@@ -64,7 +64,7 @@ git push -u origin main
 1. In Amplify app, go to "Environment variables" (left sidebar)
 2. Add these variables:
    - `AWS_REGION` = `us-east-1`
-   - `DYNAMODB_TABLE` = `visitor-tracker`
+   - `DYNAMODB_TABLE` = `didanyonereadmycoverletter.com`
    - `NODE_ENV` = `production`
 3. Click "Save"
 
@@ -86,7 +86,7 @@ git push -u origin main
            "dynamodb:PutItem",
            "dynamodb:UpdateItem"
          ],
-         "Resource": "arn:aws:dynamodb:us-east-1:*:table/visitor-tracker"
+         "Resource": "arn:aws:dynamodb:us-east-1:*:table/didanyonereadmycoverletter.com"
        }
      ]
    }

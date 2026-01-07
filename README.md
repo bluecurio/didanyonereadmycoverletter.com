@@ -42,7 +42,7 @@ npm install
 2. Set up environment variables (create `.env` file):
 ```env
 AWS_REGION=us-east-1
-DYNAMODB_TABLE=visitor-tracker
+DYNAMODB_TABLE=didanyonereadmycoverletter.com
 PORT=3000
 ```
 
@@ -65,7 +65,7 @@ npm run dev
 1. Go to AWS DynamoDB Console
 2. Click "Create table"
 3. Configuration:
-   - **Table name**: `visitor-tracker`
+   - **Table name**: `didanyonereadmycoverletter.com`
    - **Partition key**: `id` (String)
    - **Table settings**: Default settings (On-demand pricing)
 4. Click "Create table"
@@ -74,7 +74,7 @@ npm run dev
 
 ```bash
 aws dynamodb create-table \
-  --table-name visitor-tracker \
+  --table-name didanyonereadmycoverletter.com \
   --attribute-definitions AttributeName=id,AttributeType=S \
   --key-schema AttributeName=id,KeyType=HASH \
   --billing-mode PAY_PER_REQUEST \
@@ -111,7 +111,7 @@ The table uses a simple key-value structure:
    - Add the following:
      ```
      AWS_REGION=us-east-1
-     DYNAMODB_TABLE=visitor-tracker
+     DYNAMODB_TABLE=didanyonereadmycoverletter.com
      NODE_ENV=production
      ```
 
@@ -135,7 +135,7 @@ amplify configure
 
 2. **Initialize Amplify**:
 ```bash
-cd visitor-tracker
+cd didanyonereadmycoverletter.com
 amplify init
 # Follow prompts:
 # - Environment: production
@@ -173,7 +173,7 @@ The Amplify service role needs DynamoDB access. Attach this policy:
         "dynamodb:Query",
         "dynamodb:Scan"
       ],
-      "Resource": "arn:aws:dynamodb:us-east-1:*:table/visitor-tracker"
+      "Resource": "arn:aws:dynamodb:us-east-1:*:table/didanyonereadmycoverletter.com"
     }
   ]
 }
@@ -190,7 +190,7 @@ The Amplify service role needs DynamoDB access. Attach this policy:
 ## Project Structure
 
 ```
-visitor-tracker/
+didanyonereadmycoverletter.com/
 ├── server.js              # Express server with API routes
 ├── lib/
 │   └── storage.js         # DynamoDB operations
@@ -269,7 +269,7 @@ Visit your deployed URL without any ID parameter to see current count.
 
 ### DynamoDB Console
 1. Go to AWS DynamoDB Console
-2. Select `visitor-tracker` table
+2. Select `didanyonereadmycoverletter.com` table
 3. Click "Explore table items" to see all visitors
 
 ### CloudWatch Logs
