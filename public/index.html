@@ -3,39 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visitor Tracker</title>
+  <title>Did anyone read my cover letter?!</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <div class="container">
-    <h1>🎉 Visitor Counter</h1>
+    <h2>Did anyone read my cover letter?!</h2>
+
+    <div class="profile-section">
+      <img src="/FEATHERS.JPG" alt="Daniel Renfro" class="profile-avatar" />
+      <div class="profile-info">
+        <h2>Daniel Renfro</h2>
+        <a href="https://www.linkedin.com/in/daniel-p-renfro/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+          View LinkedIn Profile
+        </a>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <p>I write and write, but does anyone ever read those cover letters? Am I just posting into the void?!</p>
+    </div>
 
     <div class="counter-display">
       <div class="count" id="count">0</div>
-      <p class="label">Unique Visitors</p>
+      <p class="label">Cover letters have been read!</p>
     </div>
 
-    <div class="status" id="status"></div>
-
-    <div class="actions">
-      <button id="generateBtn" class="btn btn-primary">
-        Generate New Link
-      </button>
-    </div>
-
-    <div id="generatedLink" class="generated-link hidden">
-      <h3>Your Unique Link:</h3>
-      <div class="link-container">
-        <input type="text" id="linkInput" readonly />
-        <button id="copyBtn" class="btn btn-secondary">Copy</button>
-      </div>
-      <p class="hint">Share this link! Each unique visitor will increment the counter.</p>
-    </div>
-
-    <div class="info">
-      <p>Each unique visitor with their own ID counts once towards the global counter.</p>
-    </div>
-  </div>
+ 
 
   <script src="/app.js"></script>
 </body>
