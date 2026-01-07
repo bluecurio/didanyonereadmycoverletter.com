@@ -1,0 +1,21 @@
+version: 1
+backend:
+  phases:
+    build:
+      commands:
+        - npm ci
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - echo "No build step needed for static files"
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
