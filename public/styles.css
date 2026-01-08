@@ -28,6 +28,7 @@ body {
 h1 {
   text-align: center;
   color: #c9d1d9;
+  font-variant: small-caps;
   margin-bottom: 15px;
   font-size: 2.5rem;
   font-weight: 600;
