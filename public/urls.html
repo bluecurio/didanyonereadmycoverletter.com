@@ -8,22 +8,31 @@
 </head>
 <body>
   <div class="container">
-    <h1>Generate Tracking Links</h1>
+    <!-- LinkedIn-style banner -->
+    <div class="profile-banner"></div>
 
-    <div class="profile-section">
-      <img src="/FEATHERS.JPG" alt="Daniel Renfro" class="profile-avatar" />
+    <!-- Profile header with avatar overlapping banner -->
+    <div class="profile-header">
+      <div class="profile-avatar-wrapper">
+        <img src="/avatar.jpg" alt="Daniel Renfro" class="profile-avatar" />
+      </div>
       <div class="profile-info">
         <h2>Daniel Renfro</h2>
-        <a href="https://www.linkedin.com/in/daniel-p-renfro/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-          View LinkedIn Profile
-        </a>
+        <p class="profile-headline">Software Engineer | Building things that matter</p>
+        <p class="profile-location">Austin, Texas, United States</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/daniel-p-renfro/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
       </div>
     </div>
 
-    <div class="profile-section">
+    <!-- About section -->
+    <div class="about-section">
+      <h3 class="section-title">Generate Tracking Links</h3>
       <p>Generate unique tracking links to see if your cover letters are being read!</p>
     </div>
 
+    <!-- Actions -->
     <div class="actions">
       <button id="generateBtn" class="btn btn-primary">
         Generate New Link

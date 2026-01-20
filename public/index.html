@@ -8,35 +8,50 @@
 </head>
 <body>
   <div class="container">
-    <h1>Did anyone read my cover letter?!</h1>
+    <!-- LinkedIn-style banner -->
+    <div class="profile-banner"></div>
 
-    <div class="profile-section">
-      <img src="/FEATHERS.JPG" alt="Daniel Renfro" class="profile-avatar" />
+    <!-- Profile header with avatar overlapping banner -->
+    <div class="profile-header">
+      <div class="profile-avatar-wrapper">
+        <img src="/avatar.jpg" alt="Daniel Renfro" class="profile-avatar" />
+      </div>
       <div class="profile-info">
         <h2>Daniel Renfro</h2>
+        <p class="profile-headline">Software Engineering Manager</p>
+        <p class="profile-location">Boston, massachusetts, United States</p>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/daniel-p-renfro/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/daniel-p-renfro/</a>
-          <a href="https://github.com/bluecurio" target="_blank" rel="noopener noreferrer">https://github.com/bluecurio</a>
+          <a href="https://www.linkedin.com/in/daniel-p-renfro/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span style="color: rgba(0,0,0,0.6);">•</span>
+          <a href="https://github.com/bluecurio" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </div>
 
-    <div class="profile-section">
-      <p>I write and write, but does anyone ever read those cover letters? Am I just posting into the void?! <br/><br />This site is a satirical take on my current employment searching.</p>
+    <!-- About section -->
+    <div class="about-section">
+      <h3 class="section-title">About</h3>
+      <p>I write and write, but does anyone ever read those cover letters? Am I just posting into the void?! This site is a satirical take on my current employment searching. Built with <a href="https://claude.ai/claude-code" target="_blank" rel="noopener noreferrer">Claude Code</a>.</p>
     </div>
 
-    <div class="counter-display">
-      <div class="count" id="count">0</div>
-      <p class="label">Cover letters have been read!</p>
+    <!-- Counter section styled as activity/analytics -->
+    <div class="counter-section">
+      <h3 class="section-title">Analytics</h3>
+      <div class="counter-display">
+        <div class="count" id="count">0</div>
+        <p class="label">Cover letters have been read!</p>
+      </div>
     </div>
 
-    <!-- YOU FOUND ME!
+    <!-- Hidden link to URL generator
     <div class="actions">
       <a href="/urls" class="btn btn-primary" style="display: inline-block; text-decoration: none;">
         Generate Tracking Link
       </a>
     </div>
     -->
+
+  </div>
 
   <script src="/config.js"></script>
   <script src="/app.js"></script>
