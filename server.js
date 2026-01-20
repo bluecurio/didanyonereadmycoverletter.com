@@ -98,6 +98,14 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+/**
+ * Serve URL generation page
+ * GET /urls
+ */
+app.get('/urls', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'urls.html'));
+});
+
 // Serve index.html for all other routes (SPA)
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));

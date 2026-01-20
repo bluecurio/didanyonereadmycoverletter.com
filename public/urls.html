@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Links - Did anyone read my cover letter?!</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generate Tracking Links</h1>
+
+    <div class="profile-section">
+      <img src="/FEATHERS.JPG" alt="Daniel Renfro" class="profile-avatar" />
+      <div class="profile-info">
+        <h2>Daniel Renfro</h2>
+        <a href="https://www.linkedin.com/in/daniel-p-renfro/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+          View LinkedIn Profile
+        </a>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <p>Generate unique tracking links to see if your cover letters are being read!</p>
+    </div>
+
+    <div class="actions">
+      <button id="generateBtn" class="btn btn-primary">
+        Generate New Link
+      </button>
+      <a href="/" class="btn btn-secondary" style="display: inline-block; text-decoration: none;">
+        Back to Counter
+      </a>
+    </div>
+
+    <div id="generatedLink" class="generated-link hidden">
+      <h3>Your Unique Link:</h3>
+      <div class="link-container">
+        <input type="text" id="linkInput" readonly />
+        <button id="copyBtn" class="btn btn-secondary">Copy</button>
+      </div>
+      <p class="hint">Share this link! Each unique visitor will increment the counter.</p>
+    </div>
+
+    <div class="info">
+      <p>Each unique visitor with their own ID counts once towards the global counter.</p>
+    </div>
+  </div>
+
+  <script src="/urls.js"></script>
+</body>
+</html>
