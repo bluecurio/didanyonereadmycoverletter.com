@@ -13,3 +13,8 @@ frontend:
       - '**/*'
   cache:
     paths: []
+customHeaders:
+  - pattern: '**/*'
+    headers:
+      - key: 'Cache-Control'
+        value: 'public, max-age=300'
