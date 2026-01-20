@@ -12,7 +12,7 @@ async function generateLink() {
     generateBtn.disabled = true;
     generateBtn.textContent = 'Generating...';
 
-    const response = await fetch('/api/generate');
+    const response = await fetch(`${window.API_CONFIG.baseUrl}/generate`);
     const data = await response.json();
 
     if (response.ok) {

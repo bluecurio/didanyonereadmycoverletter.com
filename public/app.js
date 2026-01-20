@@ -17,7 +17,7 @@ async function trackVisit() {
   }
 
   try {
-    const response = await fetch(`/api/visit?id=${encodeURIComponent(visitorId)}`);
+    const response = await fetch(`${window.API_CONFIG.baseUrl}/visit?id=${encodeURIComponent(visitorId)}`);
     const data = await response.json();
 
     if (response.ok) {
@@ -46,7 +46,7 @@ async function trackVisit() {
  */
 async function fetchCount() {
   try {
-    const response = await fetch('/api/count');
+    const response = await fetch(`${window.API_CONFIG.baseUrl}/count`);
     const data = await response.json();
 
     if (response.ok) {
