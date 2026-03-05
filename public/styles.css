@@ -333,6 +333,26 @@ h2 {
   text-decoration: underline;
 }
 
+/* Footnote styling */
+.footnote-marker {
+  font-size: 0.3em;
+  vertical-align: super;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+}
+
+.footnote {
+  padding: 12px 24px;
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.45);
+  line-height: 1.4;
+}
+
+.footnote sup {
+  font-size: 0.85em;
+  margin-right: 2px;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 0;
